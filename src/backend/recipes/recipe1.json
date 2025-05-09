@@ -1,0 +1,20 @@
+{
+    "id": "recipe1",
+    "name": "Receita de Entrada de Dados",
+    "code": "CHAT1",
+    "steps": [
+        {
+            "type": "chatbot",
+            "action": "start"
+        },
+        {
+            "type": "excel",
+            "action": "save",
+            "path": "C:\\Users\\Usuario\\Onedrive\\ARQUIVOSDAPLATAFORMA\\Arquivo de Entrada.xlsx"
+        },
+        {
+            "type": "file",
+            "action": "upload"
+        }
+    ]
+}

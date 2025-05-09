@@ -1,0 +1,18 @@
+{
+    "id": "entrada_dados",
+    "name": "Receita de Entrada de Dados",
+    "description": "Receita para manipulação de operações de entrada de dados",
+    "steps": [
+        {
+            "type": "program",
+            "program": "excel",
+            "params": {
+                "template": "modelo_entrada_dados.xlsx"
+            }
+        },
+        {
+            "type": "python",
+            "code": "import pandas as pd\ndf = pd.read_excel('modelo_entrada_dados.xlsx')\ndf.to_json('saida.json')"
+        }
+    ]
+}

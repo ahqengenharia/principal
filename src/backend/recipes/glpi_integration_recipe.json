@@ -1,0 +1,25 @@
+{
+    "id": "receita_20",
+    "name": "Integração GLPI HelpDesk",
+    "description": "Integração e customização do GLPI para suporte AHQ",
+    "parent": "main_engine",
+    "steps": [
+        {
+            "type": "glpi",
+            "action": "initialize",
+            "config": {
+                "url": "http://localhost/glpi",
+                "customization": {
+                    "logo": "/assets/images/templates/LOGOAHQ.png",
+                    "clientInfo": true,
+                    "contractInfo": true
+                }
+            }
+        },
+        {
+            "type": "database",
+            "action": "read",
+            "table": "clientes"
+        }
+    ]
+}

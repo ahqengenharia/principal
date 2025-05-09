@@ -1,0 +1,17 @@
+{
+    "id": "receita_2",
+    "name": "Gestão de Dados do Cliente",
+    "description": "Receita para gerenciamento de dados do cliente",
+    "steps": [
+        {
+            "type": "database",
+            "action": "store",
+            "table": "clientes"
+        },
+        {
+            "type": "file",
+            "action": "store",
+            "path": "templates/cliente_info.docx"
+        }
+    ]
+}

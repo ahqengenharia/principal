@@ -1,0 +1,18 @@
+{
+    "id": "receita_4",
+    "name": "Geração de Documentos",
+    "description": "Receita para geração de documentos do cliente",
+    "steps": [
+        {
+            "type": "template",
+            "action": "generate",
+            "template": "cliente_info.docx",
+            "output": "relatorio_cliente.docx"
+        },
+        {
+            "type": "database",
+            "action": "read",
+            "table": "clientes"
+        }
+    ]
+}
